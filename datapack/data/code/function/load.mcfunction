@@ -40,5 +40,5 @@ summon text_display 0 0 0 {UUID:[I;0,0,0,0],Tags:["loadkill","textdump"],alignme
 
 function code:text/init
 function stringlib:zprivate/load
-
+function code:sizer/init
 
