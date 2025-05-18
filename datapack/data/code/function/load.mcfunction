@@ -15,6 +15,7 @@ tellraw @a {"shadow_color":-1425004787,"color":"#2ebe35","text":"Datapack Loaded
 
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add variable dummy
+scoreboard objectives add tickcount dummy
 
 # Variables
 
