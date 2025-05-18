@@ -5,3 +5,7 @@
 #execute as @a[predicate=code:d] run say pressing d
 #execute as @a[predicate=code:z] run say pressing space (z)
 #execute as @a[predicate=code:x] run say pressing sprint (x)
+
+# Other Functions
+
+function code:text/loop
