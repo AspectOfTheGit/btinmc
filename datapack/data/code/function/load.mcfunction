@@ -1,3 +1,5 @@
+# Gamerules
+
 gamerule doMobSpawning false
 gamerule mobGriefing false
 gamerule doFireTick false
