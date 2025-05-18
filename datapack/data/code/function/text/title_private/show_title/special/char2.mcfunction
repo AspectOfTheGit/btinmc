@@ -58,6 +58,9 @@ $execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"P"'}] 
 $execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"T"'}] run function code:text/title_private/show_title/special/skip_char with storage tl:values Titles[{UUID:$(UUID)}].title
 $execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"T"'}] as @e[nbt={UUID:$(UUID)}] run return run function code:text/title_private/show_title/special/2char1 with storage tl:values Titles[{UUID:$(UUID)}].title
 
+## Fonts
+$execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"F"'}] run function code:text/title_private/show_title/special/skip_char with storage tl:values Titles[{UUID:$(UUID)}].title
+$execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"F"'}] as @e[nbt={UUID:$(UUID)}] run return run function code:text/title_private/show_title/special/charagainig with storage tl:values Titles[{UUID:$(UUID)}].title
 
 ## Wait for z interaction, then continue writing.
-$execute at @s if entity @p[distance=..3,tag=z] run function code:text/title_private/show_title/special/skip_char with storage tl:values Titles[{UUID:$(UUID)}].title
+$execute at @s if entity @p[distance=..3,predicate=code:z] run function code:text/title_private/show_title/special/skip_char with storage tl:values Titles[{UUID:$(UUID)}].title

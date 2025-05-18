@@ -10,8 +10,8 @@ $function code:text/title_private/show_title/special/skip_char3 with storage tl:
 
 scoreboard players add @s title.lerp.iteration 1
 
-# Description Text /T0 (fix this)
-$execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"0"'}] run return run data modify storage tl:values Titles[{UUID:$(UUID)}].sound set value "undertale:voice.default"
+# Description Text /TD
+$execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"D"'}] run return run data modify storage tl:values Titles[{UUID:$(UUID)}].sound set value "undertale:voice.default"
 
 # No Text Sound /TS
 $execute as 00000000-0000-0000-0000-000000000000 if entity @s[nbt={text:'"S"'}] run return run data modify storage tl:values Titles[{UUID:$(UUID)}].sound set value ""
